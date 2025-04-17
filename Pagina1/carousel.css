@@ -1,0 +1,59 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #fff; /* texto blanco por defecto */
+  background-image: url("/img/Fondo\ equipo\ 7.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Oscurecer ligeramente el fondo si quieres mayor legibilidad */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* oscurece el fondo ligeramente */
+  z-index: -1;
+}
+
+/* Hacer tarjetas, bloques, y secciones más transparentes */
+.container,
+.carousel-caption,
+.card,
+.featurette-heading,
+p.lead {
+  background: transparent;
+  color: white;
+}
+
+/* Específico para el primer carousel-item (donde el texto debe ser negro) */
+.carousel-item.active .carousel-caption h1,
+.carousel-item.active .carousel-caption p {
+  color: #000; /* texto negro en el primer carousel */
+}
+
+/* Corregir botones */
+.btn-primary {
+  background-color: #ff9800;
+  border-color: #ff9800;
+}
+
+.btn-primary:hover {
+  background-color: #e67600;
+  border-color: #e67600;
+}
+
+/* Texto negro en las leyendas del carrusel */
+.carousel-caption p,
+.carousel-caption h1 {
+  color: #fff; /* texto blanco en los otros slides */
+}
+
+.container.marketing {
+  margin-top: 4rem; /* Puedes ajustar el valor a 3rem, 5rem, etc. */
+}

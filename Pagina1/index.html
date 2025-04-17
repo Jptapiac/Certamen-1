@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Naruto World - Carousel</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="carousel.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+
+      body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: #fff;
+        background-image: url("/img/Fondo equipo 7.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+      }
+
+      .container,
+      .carousel-caption,
+      .card,
+      .featurette-heading,
+      p.lead {
+        background: transparent;
+        color: white;
+      }
+
+      .carousel-item.active .carousel-caption h1,
+      .carousel-item.active .carousel-caption p {
+        color: #000;
+      }
+
+      .btn-primary {
+        background-color: #ff9800;
+        border-color: #ff9800;
+      }
+
+      .btn-primary:hover {
+        background-color: #e67600;
+        border-color: #e67600;
+      }
+
+      .carousel-caption p,
+      .carousel-caption h1 {
+        color: #fff;
+      }
+
+      .container.marketing {
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Naruto World - Explora el Camino Ninja</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="../Pagina2/pagina2.html">Pagina 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pagina3/pagina3.html">Pagina 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/naruto.jpg" class="d-block w-100" alt="Naruto" />
+            <div class="carousel-caption text-start">
+              <h1>¡Sigue tu camino ninja!</h1>
+              <p>“Nunca te retractes de tu palabra… ese es mi Camino ninja.”</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Únete al viaje</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/naruto y sasuke.jpg" class="d-block w-100" alt="Sasuke" />
+            <div class="carousel-caption">
+              <h1>Amistad y rivalidad</h1>
+              <p>Naruto y Sasuke: dos caminos, un destino.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Conoce su historia</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/Naruto Hokage 1.jpg" class="d-block w-100" alt="Sakura" />
+            <div class="carousel-caption text-end">
+              <h1>El legado continúa</h1>
+              <p>Del niño travieso al Séptimo Hokage.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Descubre más</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- MARKETING SECTION -->
+      <div class="container marketing mt-5">
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <img src="/img/Naruto chico.jpg" class="rounded-circle" width="140" height="140" alt="Naruto" />
+            <h2>Naruto Uzumaki</h2>
+            <p>El ninja más impredecible y valiente de Konoha, con el sueño de ser Hokage.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="/img/sasuke chico.jpg" class="rounded-circle" width="140" height="140" alt="Sasuke" />
+            <h2>Sasuke Uchiha</h2>
+            <p>Un shinobi solitario en busca de venganza, pero con un corazón en conflicto.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="/img/Sakura chica.jpg" class="rounded-circle" width="140" height="140" alt="Sakura" />
+            <h2>Sakura Haruno</h2>
+            <p>Fuerza, inteligencia y determinación. La médica del equipo 7.</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Kurama, el Zorro de Nueve Colas.</h2>
+            <p class="lead">La bestia sellada en Naruto desde su nacimiento, símbolo de fuerza y redención.</p>
+          </div>
+          <div class="col-md-5">
+            <video src="/img/Naruto conoce a Kurama.mp4" class="img-fluid rounded" autoplay muted loop playsinline controls></video>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Naruto vs Pain.</h2>
+            <p class="lead">Uno de los combates más épicos, donde Naruto demuestra su crecimiento y valor.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <video src="/img/Naruto vs Pain.mp4" class="img-fluid rounded" autoplay muted loop playsinline controls></video>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Naruto Hokage.</h2>
+            <p class="lead">Después de muchos años de lucha y perseverancia, Naruto logra su sueño.</p>
+          </div>
+          <div class="col-md-5">
+            <video src="/img/Naruto el séptimo hokage.mp4" class="img-fluid rounded" autoplay muted loop playsinline controls></video>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <footer class="container mt-5">
+          <p class="float-end"><a href="#">Volver arriba</a></p>
+          <p>&copy; 2025 Naruto FanPage &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
